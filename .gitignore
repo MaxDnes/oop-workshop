@@ -2,6 +2,7 @@
 *.user
 *.idea
 *.vs
+oop.sln
 _ReSharper.*
 bin
 obj

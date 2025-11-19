@@ -4,11 +4,11 @@ namespace oop.Domain.Media;
 
 public class Movie : Media, IWatchable
 {
-    private string Director;
-    private string Genre;
-    private int ReleaseYear;
-    private int Duration;
-    public string Language;
+    private string Director {  get; set; }
+    private string Genre    { get; set; }
+    private int ReleaseYear { get; set; }
+    private int Duration { get; set; }
+    public string Language { get; set; }
     
     public Movie(string title, string language, string director, string genre,
         int releaseYear, int duration)
