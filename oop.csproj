@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="src\Domain\Interfaces\" />
-    <Folder Include="src\Domain\Media\" />
     <Folder Include="src\Domain\User\" />
     <Folder Include="src\Persistence\" />
     <Folder Include="src\Presentation\" />
