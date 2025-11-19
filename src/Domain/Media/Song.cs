@@ -10,8 +10,7 @@ namespace oop.Domain.Media
         public int ReleaseYear { get; private set; }
         public string Genre { get; private set; }
 
-        public Song(string title, string artist, string album, int releaseYear, string genre)
-            : base(title)
+        public Song(string title, string artist, string album, int releaseYear, string genre)  : base(title)
         {
             Artist = artist;
             Album = album;

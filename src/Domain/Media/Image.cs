@@ -10,8 +10,7 @@ public class Image : Media, IDisplayable
     private double FileSize { get; set; }
     private string DateTaken { get; set; }
 
-    public Image(string title, string resolution, string fileFormat, double fileSize, string dateTaken)
-        : base(title)
+    public Image(string title, string resolution, string fileFormat, double fileSize, string dateTaken) : base(title)
     {
         Resolution = resolution;
         FileFormat = fileFormat;

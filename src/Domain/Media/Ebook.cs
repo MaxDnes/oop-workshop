@@ -9,8 +9,7 @@ public class Ebooks : Media, IReadable
     private int PublicationYear { get; set; }
     private string ISBN { get; set; }
 
-    public Ebooks(string title, string author, int pages, int publicationYear, string iSBN)
-        : base(title)
+    public Ebooks(string title, string author, int pages, int publicationYear, string iSBN) : base(title)
     {
      Author = author;
      Pages = pages;

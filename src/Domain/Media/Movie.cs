@@ -10,9 +10,7 @@ public class Movie : Media, IWatchable
     private int Duration { get; set; }
     public string Language { get; set; }
     
-    public Movie(string title, string language, string director, string genre,
-        int releaseYear, int duration)
-        : base(title)   
+    public Movie(string title, string language, string director, string genre, int releaseYear, int duration) : base(title)   
     {
         Director = director;
         Genre = genre;

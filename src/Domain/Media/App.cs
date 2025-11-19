@@ -9,8 +9,7 @@ public class App : Media, IExecutable
     private string Platform { get; set; }
     private double FileSize { get; set; }
 
-    public App(string title, string version, string publisher, string platform, double fileSize)
-        : base(title)
+    public App(string title, string version, string publisher, string platform, double fileSize) : base(title)
     {
       Version = version;
       Publisher = publisher;

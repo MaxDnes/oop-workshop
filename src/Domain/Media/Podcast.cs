@@ -8,9 +8,7 @@ public class Pdcast : Media, IPodcast
     private string Host { get; set; }
     private string Guest { get; set; }
     private int ReleaseYear { get; set; }
-    public Pdcast(string title, int episodNumber, string host, string guest,
-        int releaseYear)
-        : base(title)
+    public Pdcast(string title, int episodNumber, string host, string guest, int releaseYear) : base(title)
     {
        EpisodNumber = episodNumber;
        Host = host;
