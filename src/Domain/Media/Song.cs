@@ -1,29 +1,27 @@
 using oop.Domain.Interfaces;
+using System;
 
-namespace oop.Domain.Media;
-
-public class Song : Media, IPlayable
+namespace oop.Domain.Media
 {
-    private string Composer;
-    private string Singer;
-    private string Genre;
-    private string FileType;
-    public int Duration;
-
-    public Movie(string title, string composer, string singer, string genre,
-        string fileType, int duration)
-        : base(title)   
+    public class Song : Media, IPlayable
     {
-        Composer = composer;
-        Singer = singer;    
-        Genre = genre;
-        FileType = fileType;
-        Duration = duration;
-    }
+        public string Artist { get; private set; }
+        public string Album { get; private set; }
+        public int ReleaseYear { get; private set; }
+        public string Genre { get; private set; }
 
-    void Play()
-    {
-        throw new NotImplementedException();
-    }
+        public Song(string title, string artist, string album, int releaseYear, string genre)
+            : base(title)
+        {
+            Artist = artist;
+            Album = album;
+            ReleaseYear = releaseYear;
+            Genre = genre;
+        }
 
+        public void Play()
+        {
+            Console.WriteLine($"Playing {Title} by {Artist}...");
+        }
+    }
 }

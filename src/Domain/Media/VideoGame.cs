@@ -2,14 +2,14 @@ using oop.Domain.Interfaces;
 
 namespace oop.Domain.Media
 {
-    public class Song : Media, IPlayable
+    public class VideoGame : Media, IPlayable
     {
         private string Artist { get; set; }
         private string Album { get; set; }
         private int ReleaseYear { get; set; }
-        private string Genre { get; set; }
+        private string Genre;
 
-        public Song(string title, string artist, string album, int releaseYear, string genre)
+        public VideoGame(string title, string artist, string album, int releaseYear, string genre)
             : base(title)
         {
             Artist = artist;
