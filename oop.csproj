@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="src\Domain\User\" />
     <Folder Include="src\Persistence\" />
     <Folder Include="src\Presentation\" />
     <Folder Include="test\" />

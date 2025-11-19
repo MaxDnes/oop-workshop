@@ -20,4 +20,20 @@ public abstract class Media
     {
         return Ratings.Values.Average();
     }
+    
+    // virtual to be able to override
+    public virtual void Download()
+    {
+        Console.WriteLine($"{Title} is downloading...");
+    }
+    
+    // TODO: uncomment after implemented user logic
+    /*public virtual void Rate(Borrower user, int score)
+    {
+        if (Ratings.ContainsKey(user))
+            Ratings[user] = score;
+        else
+            Ratings.Add(user, score);
+        Console.WriteLine($"{user.Name} rated {Title} with {score} points.");
+    }*/
 }
