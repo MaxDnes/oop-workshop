@@ -17,8 +17,6 @@ public class Pdcast : Media, IPodcast
        Guest = guest;
        ReleaseYear = releaseYear;
     }
-
-
    public void Listen()
     {
         throw new NotImplementedException();

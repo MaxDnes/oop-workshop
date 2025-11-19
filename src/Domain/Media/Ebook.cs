@@ -12,10 +12,10 @@ public class Ebooks : Media, IReadable
     public Ebooks(string title, string author, int pages, int publicationYear, string iSBN)
         : base(title)
     {
-    Author = author;
-        Pages = pages;
-        PublicationYear = publicationYear;
-        ISBN = iSBN;
+     Author = author;
+     Pages = pages;
+     PublicationYear = publicationYear;
+     ISBN = iSBN;
 
     }
 
