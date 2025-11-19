@@ -2,5 +2,6 @@
 
 public interface IPodcast
 {
-    
+    void Listen();
+    void Complete();
 }

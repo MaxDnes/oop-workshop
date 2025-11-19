@@ -20,7 +20,11 @@ namespace oop.Domain.Media
 
         public void Play()
         {
-            Console.WriteLine($"Playing {Title} by {Artist}...");
+            Console.WriteLine($"Playing {Title} by {Artist}");
+        }
+        public void complete()
+        {
+            Console.WriteLine($"You have completed the game: {Title}");
         }
     }
 }
