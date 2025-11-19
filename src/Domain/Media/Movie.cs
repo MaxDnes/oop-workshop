@@ -12,7 +12,7 @@ public class Movie : Media, IWatchable
     
     public Movie(string title, string language, string director, string genre,
         int releaseYear, int duration)
-        : base(title)   // calls the Media constructor
+        : base(title)   
     {
         Director = director;
         Genre = genre;
