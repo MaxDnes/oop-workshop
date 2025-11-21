@@ -2,5 +2,6 @@
 
 public interface IRatable
 {
-    void Rate();
+    void Rate(int result);
+    string GetAverageRating();
 }

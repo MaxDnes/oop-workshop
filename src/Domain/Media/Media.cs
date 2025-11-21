@@ -1,6 +1,8 @@
-﻿namespace oop.Domain.Media;
+﻿using oop.Domain.Interfaces;
 
-public abstract class Media
+namespace oop.Domain.Media;
+
+public abstract class Media : IRatable, IDownloadable
 {
     public string Title { get; set; }
     public bool IsBorrowed { get; set; }
@@ -15,6 +17,16 @@ public abstract class Media
 
     public void Borrow() => IsBorrowed = true;
     public void Return() => IsBorrowed = false;
+
+    public void Rate(int result)
+    {
+        throw new NotImplementedException();
+    }
+
+    string IRatable.GetAverageRating()
+    {
+        throw new NotImplementedException();
+    }
 
     public double GetAverageRating()
     {

@@ -1,27 +1,25 @@
 using oop.Domain.Interfaces;
-using System;
 
-namespace oop.Domain.Media
+namespace oop.Domain.Media;
+
+public class Song : Media
 {
-    public class Song : Media, IPlayable
+    public string Composer { get; set; }
+    public string Singer { get; set; }
+    public string Genre { get; set; }
+    public string FileType { get; set; }
+    public int Duration { get; set; }
+    public string Language { get; set; }
+    
+    public Song(string title, string composer, string singer, string genre, 
+        string fileType, int duration, string language) : base(title)
     {
-        public string Artist { get; private set; }
-        public string Album { get; private set; }
-        public int ReleaseYear { get; private set; }
-        public string Genre { get; private set; }
-
-        public Song(string title, string artist, string album, int releaseYear, string genre)
-            : base(title)
-        {
-            Artist = artist;
-            Album = album;
-            ReleaseYear = releaseYear;
-            Genre = genre;
-        }
-
-        public void Play()
-        {
-            Console.WriteLine($"Playing {Title} by {Artist}...");
-        }
+        Composer = composer;
+        Singer = singer;
+        Genre = genre;
+        FileType = fileType;
+        Duration = duration;
+        Language = language;
     }
+    
 }

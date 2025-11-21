@@ -2,28 +2,22 @@
 
 namespace oop.Domain.Media;
 
-public class Movie : Media, IWatchable
+public class Movie : Media
 {
-    private string Director {  get; set; }
-    private string Genre    { get; set; }
-    private int ReleaseYear { get; set; }
-    private int Duration { get; set; }
+    public string Director { get; set; }
+    public string Genres { get; set; }  
+    public int ReleaseYear { get; set; }
     public string Language { get; set; }
+    public int Duration { get; set; }
     
-    public Movie(string title, string language, string director, string genre,
-        int releaseYear, int duration)
-        : base(title)   
+    public Movie(string title, string director, string genres, 
+        int releaseYear, string language, int duration) : base(title)
     {
         Director = director;
-        Genre = genre;
+        Genres = genres;
         ReleaseYear = releaseYear;
-        Duration = duration;
         Language = language;
+        Duration = duration;
     }
 
-
-    public void Watch()
-    {
-        throw new NotImplementedException();
-    }
 }
